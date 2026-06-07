@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Spin Elite</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<header class="topbar">
+  <div>
+    <div class="logo">GOLDEN SPIN ELITE</div>
+    <div class="subtitle">PREMIUM CASINO CLUB</div>
+  </div>
+
+  <div class="balance-box">
+    <span>💰</span>
+    <span id="balance">12500</span>
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="screen active">
+
+<div class="hero-card">
+<h1>Welcome Back</h1>
+<p>Luxury Gaming Experience</p>
+</div>
+
+<div class="game-grid">
+
+<div class="game-card" onclick="showScreen('slots')">
+🎰
+<h3>Slots</h3>
+</div>
+
+<div class="game-card" onclick="showScreen('roulette')">
+🎡
+<h3>Roulette</h3>
+</div>
+
+<div class="game-card" onclick="showScreen('blackjack')">
+🃏
+<h3>Blackjack</h3>
+</div>
+
+<div class="game-card" onclick="showScreen('vip')">
+💎
+<h3>VIP Club</h3>
+</div>
+
+</div>
+
+<div class="leaderboard">
+<h2>🏆 Top Players</h2>
+
+<div class="row">
+<span>GoldKing</span>
+<span>15300</span>
+</div>
+
+<div class="row">
+<span>LuckyAce</span>
+<span>12500</span>
+</div>
+
+<div class="row">
+<span>DiamondRose</span>
+<span>10200</span>
+</div>
+
+</div>
+
+</section>
+
+<section id="slots" class="screen">
+
+<h2>🎰 Elite Slots</h2>
+
+<div class="slot-machine">
+
+<div id="slot1" class="reel">🍒</div>
+<div id="slot2" class="reel">💎</div>
+<div id="slot3" class="reel">⭐</div>
+
+</div>
+
+<button class="gold-btn" onclick="spinSlots()">
+SPIN
+</button>
+
+<div id="slotResult"></div>
+
+</section>
+
+<section id="roulette" class="screen">
+
+<h2>🎡 Roulette</h2>
+
+<div class="roulette-wheel">
+🎡
+</div>
+
+<div class="roulette-buttons">
+
+<button class="red-btn"
+onclick="playRoulette('red')">
+Red
+</button>
+
+<button class="black-btn"
+onclick="playRoulette('black')">
+Black
+</button>
+
+</div>
+
+<div id="rouletteResult"></div>
+
+</section>
+
+<section id="blackjack" class="screen">
+
+<h2>🃏 Blackjack</h2>
+
+<div class="card-box">
+
+<div id="playerCard">7</div>
+<div id="dealerCard">?</div>
+
+</div>
+
+<button class="gold-btn"
+onclick="playBlackjack()">
+Play Round
+</button>
+
+<div id="blackjackResult"></div>
+
+</section>
+
+<section id="vip" class="screen">
+
+<h2>💎 VIP CLUB</h2>
+
+<div class="vip-card">
+<h3>ELITE MEMBER</h3>
+<p>Exclusive tournaments</p>
+<p>Special bonuses</p>
+<p>VIP support</p>
+</div>
+
+</section>
+
+<section id="profile" class="screen">
+
+<div class="profile">
+
+<div class="avatar"></div>
+
+<h2>GoldenPlayer</h2>
+
+<p>Balance:
+<span id="profileBalance">
+12500
+</span>
+</p>
+
+<p>Level: Elite</p>
+
+<p>Games Played: 48</p>
+
+</div>
+
+</section>
+
+</main>
+
+<nav class="bottom-nav">
+
+<button onclick="showScreen('home')">
+🏠
+</button>
+
+<button onclick="showScreen('slots')">
+🎰
+</button>
+
+<button onclick="showScreen('roulette')">
+🎡
+</button>
+
+<button onclick="showScreen('vip')">
+💎
+</button>
+
+<button onclick="showScreen('profile')">
+👤
+</button>
+
+</nav>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
