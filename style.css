@@ -425,3 +425,69 @@ transform:scale(1);
 }
 
 }
+.game-card{
+height:180px;
+position:relative;
+overflow:hidden;
+border-radius:25px;
+background:#111;
+border:1px solid rgba(255,215,0,.2);
+}
+
+.game-overlay{
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+padding:20px;
+
+background:
+linear-gradient(
+180deg,
+transparent,
+rgba(0,0,0,.9)
+);
+}
+
+.game-overlay h3{
+font-size:24px;
+font-weight:900;
+margin-bottom:5px;
+}
+
+.game-overlay p{
+color:#d4af37;
+font-size:13px;
+}
+
+.slots-card{
+background:
+radial-gradient(circle at center,
+rgba(255,215,0,.4),
+transparent 70%),
+#090909;
+}
+
+.roulette-card{
+background:
+radial-gradient(circle at center,
+rgba(255,100,100,.35),
+transparent 70%),
+#090909;
+}
+
+.blackjack-card{
+background:
+radial-gradient(circle at center,
+rgba(100,255,180,.25),
+transparent 70%),
+#090909;
+}
+
+.vip-card-menu{
+background:
+radial-gradient(circle at center,
+rgba(255,215,0,.55),
+transparent 70%),
+#090909;
+}
