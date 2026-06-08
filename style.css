@@ -341,3 +341,87 @@ box-shadow:
 box-shadow:
 0 0 30px rgba(255,215,0,.15);
 }
+.hero-banner{
+text-align:center;
+padding:50px 20px;
+border-radius:30px;
+
+background:
+linear-gradient(
+180deg,
+rgba(255,215,0,.15),
+rgba(255,215,0,.03)
+);
+
+border:2px solid rgba(255,215,0,.3);
+
+box-shadow:
+0 0 60px rgba(255,215,0,.15);
+
+margin-bottom:25px;
+}
+
+.hero-banner h1{
+font-size:44px;
+font-weight:900;
+color:#ffd700;
+
+text-shadow:
+0 0 20px gold,
+0 0 40px gold;
+}
+
+.hero-banner p{
+margin-top:10px;
+font-size:14px;
+letter-spacing:3px;
+color:#d4af37;
+}
+
+.main-spin-btn{
+
+margin-top:30px;
+
+width:100%;
+max-width:350px;
+
+height:90px;
+
+border:none;
+border-radius:50px;
+
+font-size:32px;
+font-weight:900;
+
+cursor:pointer;
+
+background:
+linear-gradient(
+180deg,
+#fff7b0,
+#ffd700,
+#b8860b
+);
+
+box-shadow:
+0 0 40px gold;
+
+animation:
+goldPulse 2s infinite;
+}
+
+@keyframes goldPulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
